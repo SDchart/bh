@@ -1,0 +1,2 @@
+# BandaiHobbySite
+仿品
