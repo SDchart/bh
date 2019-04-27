@@ -4,9 +4,10 @@
 }
 a {
     color: #008CC9;
+    text-decoration: none;
 }
 body {
-    font-family: arial,meiryo,sans-serif;
+    font-family: "Audiowide",arial,meiryo,sans-serif;
     font-size: 75%;
     background-color: #FFF;
     min-width: 990px;
@@ -200,8 +201,7 @@ ul.bhs_sub_megamenu li h2 span {
 ul.bhs_sub_megamenu li h2 span.bhs_mainttl {
     color: #fff;
     display: block;
-    font-size: 13px !important;
-    font-weight: bold;
+    font-size: 1.2rem !important;
     line-height: 1.2;
     letter-spacing: -0.8px;
     margin: 0 3px 0 0;
@@ -210,14 +210,490 @@ ul.bhs_sub_megamenu li h2 span.bhs_mainttl {
     vertical-align: bottom !important;
     width: auto !important;
 }
-ul.bhs_sub_megamenu li h2 span.bhs_subttl {
-    color: #fff;
-    display: block;
-    font-size: 8px !important;
-    font-weight: bold;
-    line-height: 1.5;
+ul.bhs_sub_megamenu li h2:before {
+    background: url(../img/common/bhs_gmenu_icon.png) no-repeat;
+    background-size: cover;
+    content: " ";
+    display: inline-block;
+    height: 22px;
+    line-height: 0;
+    margin: 0 7px 0 7px;
+    padding: 0;
+    vertical-align: middle;
+    width: 22px;
+    box-sizing: border-box;
+}
+ul.bhs_sub_megamenu li.bhs_sub_megamenu_newpd h2:before{
+    background-position: -21px 0px;
+}
+ul.bhs_sub_megamenu li.bhs_sub_megamenu_evc h2:before{
+    background-position: -64px 0px;
+}
+ul.bhs_sub_megamenu li.bhs_sub_megamenu_hos h2:before{
+    background-position: -43px 0px;
+}
+li.bhs_sub_megamenu_newpd:hover,li.bhs_sub_megamenu_gunpla:hover,li.bhs_sub_megamenu_chapla:hover,li.bhs_sub_megamenu_evc:hover,li.bhs_sub_megamenu_hos:hover{
+    background-color: #e3162f;
+}
+/*主体*/
+#bhs_contents {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    min-width: 990px;
+    width: 100%;
+}
+/*轮播图*/
+#demoCarousel{
+    width: 990px;
+    margin: 0 auto 42px;
+}
+.carousel-indicators{
+    bottom: -32px;
+}
+.carousel-indicators li{
+    width: 50px;
+    height: 6px;
+    background-color: #262626;
+}
+.carousel-indicators li.active{
+    background-color: #e3162f;
+}
+.carousel-control-prev,.carousel-control-next{
+    width: 3%;
+    height: 100%;
+    background-color: #666;
+}
+/*内容主体*/
+#bhs_contentsWrap {
+    margin: 0 auto;
+    padding: 0 0 65px 0;
+    width: 990px;
+}
+#bhs_sideL {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 155px;
+}
+#bhs_main {
+    float: left;
     margin: 0;
     padding: 0;
-    vertical-align: bottom !important;
-    width: auto !important;
+    width: 550px;
+}
+#bhs_sideR {
+    float: right;
+    margin: 0 0 0 0px;
+    padding: 0;
+    width: 255px;
+}
+/*左侧*/
+#bhs_sideL #bhs_side_gunpla,#bhs_sideL #bhs_sideLink {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    margin: 0 0 10px 0;
+    padding: 0 0 3px 0;
+}
+#bhs_sideL h3.bhs_title {
+    border-bottom: 1px solid #dcdcdc;
+    margin: 0 0 10px 0;
+    padding: 8px 7px;
+    position: relative;
+}
+#bhs_sideL h3.bhs_title span {
+    border-left: 5px solid #262626;
+    color: #191919;
+    font-size: 1.2rem;
+    float: left;
+    line-height: 1.1;
+    margin: 0;
+    padding: 2px 0 0 9px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li {
+    margin: 0 0 8px;
+    padding: 0;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li a {
+    display: inline-block;
+    height: 65px;
+    width: 150px !important;
+    background: url("../img/common/brand.jpg")no-repeat;
+    background-size: cover;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(2) a {
+    background-position: 0px -65px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(3) a {
+    background-position: 0px -130px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(4) a {
+    background-position: 0px -195px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(5) a {
+    background-position: 0px -260px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(6) a {
+    background-position: 0px -325px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(7) a {
+    background-position: 0px -390px;
+}
+#bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(8) a {
+    background-position: 0px -455px;
+}
+#bhs_sideL .bhs_side_btn_more {
+    border: 1px solid #666;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 1px;
+    width: 86%;
+    box-sizing: border-box;
+}
+#bhs_sideL .bhs_side_btn_more a {
+    background: #666;
+    border-radius: 2px;
+    color: #fff !important;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none !important;
+    width: 100%;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_sideL #bhs_sideLink ul {
+    margin: 0;
+    padding: 7px 4px 0 4px;
+    text-align: left;
+}
+#bhs_sideL #bhs_sideLink ul li {
+    display: block;
+    margin: 0 0 7px 0;
+    padding: 0;
+    height: 54px;
+    vertical-align: middle;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_sideL #bhs_sideLink ul li:hover{
+    background-color: #666;
+}
+#bhs_sideL #bhs_sideLink ul li a {
+    color: #333 !important;
+    display: inline-block!important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+    width: 90% !important;
+    z-index: 10;
+}
+#bhs_sideL #bhs_sideLink ul li a:before {
+    content: url(../img/common/bhs_side_icon_caution.png);
+    display: inline-block;
+    height: 19px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 23px;
+    box-sizing: border-box;
+}
+#bhs_sideL #bhs_sideLink ul li span:after {
+    border-right: 2px solid #b3b3b3;
+    border-top: 2px solid #b3b3b3;
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    line-height: 0;
+    position: absolute;
+    top: 31%;
+    right: -12px;
+    transform: rotate(45deg) !important;
+    vertical-align: middle;
+    width: 6px;
+    visibility: inherit !important;
+}
+/*中间*/
+#bhs_news {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 0;
+    margin: 0 auto 26px auto;
+    font-size: 1rem;
+}
+h2.bhs_main_title {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+    padding: 6px 5px;
+    position: relative;
+}
+h2.bhs_main_title span {
+    border-left: 5px solid #262626;
+    color: #191919;
+    display: inline-block;
+    font-size: 1.2rem !important;
+    line-height: 1.1;
+    margin: 0;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+#bhs_news ul li {
+    background: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin: 0 0 36px 0;
+    padding: 0;
+    vertical-align: top;
+    width: 172px;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_news ul li:hover {
+    border: 1px solid #e3162f;
+}
+#bhs_news ul li a, #bhs_news ul li a:hover {
+    text-decoration: none;
+}
+#bhs_news ul li p.bhs_info_img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 170px;
+}
+#bhs_news ul li p.bhs_info_img img {
+    height: auto !important;
+    width: 170px !important;
+}
+#bhs_news ul li p.bhs_info_cd {
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    line-height: 26px;
+}
+#bhs_news ul li p.bhs_info_cd span.bhs_info_new {
+    color: #fff;
+    background-color: #e3162f;
+    height: 24px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    margin: 0 5px 3px 0;
+    padding: 5px 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+#bhs_news ul li p.bhs_info_cd span.bhs_info_date {
+    color: #222;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+#bhs_news ul li p.bhs_info_txt {
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.5;
+    height: 114px;
+    margin: 0 auto 0 auto;
+    padding: 8px 8px 14px 8px;
+    word-break: break-all;
+    overflow: hidden;
+}
+#bhs_news ul li p.bhs_info_price {
+    color: #e3162f;
+    text-align: center;
+    margin-bottom: 0;
+}
+#bhs_main .bhs_main_btn_all {
+    border: 1px solid #666;
+    border-radius: 4px;
+    margin: 0 auto 10px auto;
+    padding: 1px;
+    width: 347px;
+    box-sizing: border-box;
+}
+#bhs_main .bhs_main_btn_all a {
+    background: #666;
+    border-radius: 2px;
+    color: #fff !important;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none !important;
+    width: 100%;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_main .bhs_main_btn_all a span {
+    font-size: 1.2rem;
+    display: inline-block;
+    line-height: 1.3;
+    margin: 0 0 0 -16px;
+    padding: 13px 0;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+/*右侧*/
+#bhs_sideR #bhs_side_ranking,#bhs_sideR #bhs_side_gallery,#bhs_sideR #bhs_side_ad {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    margin: 0 0 7px 0;
+    padding: 0;
+    width: 100%;
+}
+#bhs_sideR h3.bhs_title {
+    border-bottom: 1px solid #dcdcdc;
+    margin: 0 0 10px 0;
+    padding: 8px 7px;
+    position: relative;
+}
+#bhs_sideR h3.bhs_title span {
+    border-left: 5px solid #262626;
+    color: #191919;
+    font-size: 1.2rem;
+    float: left;
+    line-height: 1.1;
+    margin: 0;
+    padding: 2px 0 0 9px;
+}
+#bhs_sideR #bhs_side_ranking ol {
+    margin: 0;
+    padding: 0 9px 4px 9px;
+}
+#bhs_sideR #bhs_side_ranking ol li {
+    border: 1px solid #e1e1e1;
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 2px;
+    width: 100%;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_sideR #bhs_side_ranking ol li.rank01{
+    background: url("../img/common/bhs_side_ranking_no1.png")no-repeat right top;
+}
+#bhs_sideR #bhs_side_ranking ol li.rank02{
+    background: url("../img/common/bhs_side_ranking_no2.png")no-repeat right top;
+}
+#bhs_sideR #bhs_side_ranking ol li.rank03{
+    background: url("../img/common/bhs_side_ranking_no3.png")no-repeat right top;
+}
+#bhs_sideR #bhs_side_ranking ol li.rank04{
+    background: url("../img/common/bhs_side_ranking_no4.png")no-repeat right top;
+}
+#bhs_sideR #bhs_side_ranking ol li.rank05{
+    background: url("../img/common/bhs_side_ranking_no5.png")no-repeat right top;
+}
+#bhs_sideR #bhs_side_ranking ol li p.bhs_rank_cd {
+    display: inline-block;
+    margin: 0 0 0 2px;
+    padding: 0;
+    vertical-align: top;
+    width: 204px;
+}
+/*底部*/
+#bhs_footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+}
+#bhs_footer #bhs_footer_boiler,#bhs_footer #bhs_footer_cr_bd {
+    background: #f7f7f7;
+    padding: 1px 0;
+    width: 990px;
+    z-index: 2;
+}
+#bhs_footer #bhs_footer_boiler ul {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #c7c7c7;
+    font-size: 0;
+    line-height: 0;
+    margin: 26px auto 50px auto;
+    padding: 0;
+    width: 990px;
+}
+#bhs_footer #bhs_footer_boiler ul li {
+    border-right: 1px solid #c7c7c7;
+    border-left: 1px solid #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px 0 20px;
+    height: 183px;
+    vertical-align: top;
+    width: calc(100% / 5);
+    box-sizing: border-box;
+}
+#bhs_footer #bhs_footer_boiler ul li dl {
+    display: block;
+    margin: 0;
+    padding: 17px 0;
+}
+#bhs_footer #bhs_footer_boiler ul li dl dt {
+    color: #252525;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+#bhs_footer #bhs_footer_boiler ul li dl dd {
+    font-size: 0.8rem;
+    display: block;
+    line-height: 1.5;
+    margin: 0 0 18px 22px;
+    padding: 0;
+    position: relative;
+}
+#bhs_footer #bhs_footer_boiler ul li dl dd:before {
+    border-right: 2px solid #252525;
+    border-top: 2px solid #252525;
+    content: " ";
+    display: block;
+    height: 6px;
+    line-height: 0;
+    margin: 0 9px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    transform: rotate(45deg) !important;
+    vertical-align: middle;
+    width: 6px;
+    visibility: inherit !important;
+}
+#bhs_footer #bhs_footer_boiler ul li dl a{
+    color: #262626;
+}
+#bhs_footer #bhs_footer_cr_bd .bhs_footer_copy span {
+    color: #202020;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.2;
+    vertical-align: middle;
+    width: 920px;
 }
