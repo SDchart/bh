@@ -13,6 +13,10 @@ body {
     min-width: 990px;
     line-height: 1.4;
 }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 ul,ol,li{
     list-style: none;
 }
@@ -412,4 +416,279 @@ h2.bhs_main_title span {
     padding: 0;
     vertical-align: top;
     width: 204px;
+}
+/*面包屑*/
+#bhs_navbar {
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+#bhs_navbar .bclist:last-child {
+    margin: 0 auto 0;
+    padding: 0 0 20px 0;
+    width: 990px;
+    box-sizing: border-box;
+}
+#bhs_navbar .bclist {
+    margin: 0 auto 0;
+    padding: 0 0 5px 0;
+    width: 990px;
+    box-sizing: border-box;
+}
+#bhs_navbar .bclist ul li {
+    color: #4d4c4c;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 0 11px;
+    vertical-align: middle;
+    position: relative;
+    width: auto;
+}
+#bhs_navbar .bclist ul li+li:before {
+    content: ">";
+    line-height: 1.5;
+    margin-right: 20px;
+}
+/*列表主要内容*/
+#bhs_main_2col {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 720px;
+}
+#bhs_page_gunpla_cat {
+    background: #fff;
+    padding: 0;
+    margin: 0 auto 26px auto;
+}
+.bhs_main_summary {
+    margin: 15px 0 15px 0;
+}
+.bhs_main_summary p img {
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    margin: 0 9px 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 150px;
+}
+.bhs_main_summary p span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 550px;
+    box-sizing: border-box;
+}
+table#release {
+    width: 720px;
+    margin: 10px 0 0;
+    font-size: 0;
+}
+/*查询表单*/
+#bhs_searchForm {
+    background: #eee;
+    margin: 30px auto 30px auto;
+    padding: 0;
+}
+#bhs_searchForm h4 {
+    background: #3eac33;
+    float: left;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 25px;
+}
+#bhs_searchForm h4 span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#bhs_searchForm p.bhs_search_num {
+    float: left;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 15px;
+}
+#bhs_searchForm form {
+    clear: both;
+    padding: 10px 0 14px 0;
+}
+#bhs_searchForm form ul {
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto 6px auto;
+    padding: 0;
+    width: 690px;
+}
+#bhs_searchForm form ul li {
+    background: #fff;
+    display: inline-block;
+    margin: 0 1% 5px 0;
+    padding: 8px 10px;
+    vertical-align: top;
+    width: 49%;
+    height: 38px;
+    box-sizing: border-box;
+}
+#bhs_searchForm form ul li span {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 22px;
+    vertical-align: top;
+    width: 50%;
+}
+#bhs_searchForm form ul li.bhs_search_works select,#bhs_searchForm form ul li.bhs_search_seq select {
+    width: 50%;
+    height: 19px;
+    box-sizing: border-box;
+}
+#bhs_searchForm form ul li.bhs_search_cat p {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 50%;
+    box-sizing: border-box;
+}
+#bhs_searchForm form ul li.bhs_search_cat label {
+    display: inline-block;
+    line-height: 0;
+    margin: 0 5px 0 0;
+    padding: 2px 0 2px 0;
+    vertical-align: middle;
+}
+#bhs_searchForm form ul li.bhs_search_cat label input {
+    display: inline-block;
+    margin: 0 2px 0 0;
+    padding: 0;
+    vertical-align: top;
+}
+#bhs_searchForm form ul li.bhs_search_cat label span {
+    background: #ad1728;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1 !important;
+    margin: 0;
+    padding: 2px 4px 2px 4px;
+    vertical-align: top;
+    width: auto;
+    box-sizing: border-box;
+}
+#bhs_searchForm form ul li.bhs_search_jan input,#bhs_searchForm form ul li.bhs_search_pdname input {
+    vertical-align: top;
+    width: 50%;
+    height: 19px;
+    box-sizing: border-box;
+}
+#bhs_searchForm form ul li.bhs_search_pdname {
+    height: 60px;
+}
+#bhs_searchForm .bhs_submit {
+    border: 1px solid #666;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    width: 361px;
+    box-sizing: border-box;
+}
+#bhs_searchForm .bhs_submit button {
+    background: #666;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+#bhs_searchForm .bhs_submit button span {
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1 !important;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    vertical-align: middle !important;
+    box-sizing: border-box;
+}
+/*列表*/
+ul.pnav {
+    margin: 22px auto 20px auto;
+    padding: 0;
+    text-align: center;
+}
+ul.pnav li {
+    display: inline;
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 0 7px 0 0;
+    padding: 0;
+}
+ul.pnav li span {
+    background: #3eac33;
+    border: 1px solid #e1e1e1;
+    color: #fff;
+    display: inline-block;
+    height: 43px;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    box-sizing: border-box;
+}
+ul.pnav li a {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    color: #222;
+    display: inline-block;
+    height: 43px;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    opacity: 1;
+    transition: all ease-in-out .25s;
+    box-sizing: border-box;
+}
+ul.pnav li.prev a, ul.pnav li.next a {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    color: #222;
+    display: inline-block;
+    height: 43px;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: auto;
+    box-sizing: border-box;
 }
