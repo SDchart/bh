@@ -117,6 +117,9 @@ a img {
     transition: all ease-in-out .25s;
     box-sizing: border-box;
 }
+#bhs_header .bhs_headerWrap #bhs_header_aside .bhs_header_aside_sns ul li.bhs_header_aside_lang_en:hover {
+    background-color: #3eac33;
+}
 #bhs_header .bhs_headerWrap #bhs_header_aside .bhs_header_aside_sns ul li.bhs_header_aside_lang_en a {
     color: #3eac33;
     text-decoration: none;
@@ -126,6 +129,9 @@ a img {
     font-size: 12px;
     display: block;
     line-height: 1.1;
+}
+#bhs_header .bhs_headerWrap #bhs_header_aside .bhs_header_aside_sns ul li.bhs_header_aside_lang_en:hover span {
+    color: #fff;
 }
 /*导航*/
 #bhs_sub_navBox {
