@@ -26,31 +26,31 @@ ul,ol,li{
     font-weight: 400;
     src: url(../fonts/l7gdbjpo0cum0ckerWCdlg_O.woff2) format('woff2');
 }
-.my_header,.my_footer{
-    width: 100%;
-}
-.my_header{
-    margin-bottom: -15px;
-}
-.my_footer{
-    margin-top: -15px;
-    height:20rem;
-}
+/*iframe引入*/
+/*.my_header,.my_footer{*/
+    /*width: 100%;*/
+/*}*/
+/*.my_header{*/
+    /*margin-bottom: -15px;*/
+/*}*/
+/*.my_footer{*/
+    /*margin-top: -15px;*/
+    /*height:20rem;*/
+/*}*/
 /*加载*/
 #loading>div {
     width: 50%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 50;
-    transition: 1s;
 }
-#loading div:nth-of-type(1) {
-    background: url("../img/common/1920_1long.png") no-repeat right top;
+#loading div.leftPic {
+    background: url("../img/common/1920_1long.png") right top;
     right: 50%;
     animation: trans1 1.3s 1s forwards
 }
-#loading div:nth-of-type(2) {
+#loading div.rightPic {
     background: url("../img/common/1920_2long.png");
     right: 0;
     animation: trans2 1.3s 1s forwards
@@ -64,20 +64,62 @@ ul,ol,li{
     left: 50%;
     margin-left: -2px;
     z-index: 60;
-    transition: .8s;
     animation: 1s trans0;
 }
 @keyframes trans0 {
     0% {height: 0;}
-    100% {height: 100%}
+    100% {height: 100%;}
 }
 @keyframes trans1 {
-    0% {right: 50%}
-    100% {right: 100%}
+    0% {right: 50%;}
+    100% {right: 100%;}
+}
+@keyframes trans1_1 {
+    0% {right: 100%;}
+    100% {right: 50%;}
 }
 @keyframes trans2 {
-    0% {width: 50%}
-    100% {width: 0%}
+    0% {width: 50%;}
+    100% {width: 0%;}
+}
+@keyframes trans2_1 {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+/*登录、注册*/
+#loading .rightPic .bhs_loginPanel{
+    position: absolute;
+    top: 300px;
+    left: -150px;
+    z-index: 70;
+    width: 300px;
+    height: 400px;
+    opacity: 0;
+    background-color: #fff;
+    border: 2px solid #e3162f;
+    border-radius: 5px;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_esc {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 80;
+    font-size: 40px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #262626;
+    background-color: #fff;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_esc:hover {
+    color: #e3162f;
+}
+@keyframes loginPanel {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes loginPanel_1 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 /*主体*/
 #bhs_contents {
