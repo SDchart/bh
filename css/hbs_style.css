@@ -93,7 +93,7 @@ ul,ol,li{
     left: -150px;
     z-index: 70;
     width: 300px;
-    height: 400px;
+    height: 176px;
     opacity: 0;
     background-color: #fff;
     border: 2px solid #e3162f;
@@ -112,6 +112,34 @@ ul,ol,li{
 }
 #loading .rightPic .bhs_loginPanel .bhs_login_esc:hover {
     color: #e3162f;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_uname {
+    position: absolute;
+    top: 50px;
+    left: 48px;
+    width: 200px;
+    height: 24px;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_upwd {
+    position: absolute;
+    top: 74px;
+    left: 48px;
+    width: 200px;
+    height: 24px;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_btn {
+    position: absolute;
+    top: 98px;
+    left: 48px;
+    width: 100px;
+    height: 24px;
+}
+#loading .rightPic .bhs_loginPanel .bhs_register_btn {
+    position: absolute;
+    top: 98px;
+    left: 148px;
+    width: 100px;
+    height: 24px;
 }
 @keyframes loginPanel {
     0% {opacity: 0;}
