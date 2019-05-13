@@ -30,4 +30,3 @@ toLoginBtn.onclick=function () {
     registerPanel.setAttribute("style","animation: registerPanel_1 0.7s forwards");
     loginPanel.setAttribute("style","animation: loginPanel 0.7s 0.7s forwards");
 }
-// 验证

@@ -428,6 +428,7 @@ ul,ol,li{
     width: 150px !important;
     background: url("../img/common/brand.jpg")no-repeat;
     background-size: cover;
+    box-sizing: border-box;
 }
 #bhs_sideL #bhs_side_gunpla ul.logoList li:nth-child(2) a {
     background-position: 0px -65px;
@@ -566,7 +567,7 @@ h2.bhs_main_title span {
     transition: all ease-in-out .25s;
     box-sizing: border-box;
 }
-#bhs_news ul li:hover {
+#bhs_news ul li:hover,#bhs_side_gunpla .logoList li:hover {
     border:1px solid #e3162f;
     background:linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
     animation:hue-animate 1s linear infinite
