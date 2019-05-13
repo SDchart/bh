@@ -87,7 +87,7 @@ ul,ol,li{
     100% {width: 50%;}
 }
 /*登录、注册*/
-#loading .rightPic .bhs_loginPanel{
+#loading .rightPic .bhs_loginPanel,#loading .rightPic .bhs_registerPanel{
     position: absolute;
     top: 300px;
     left: -150px;
@@ -95,11 +95,15 @@ ul,ol,li{
     width: 300px;
     height: 176px;
     opacity: 0;
-    background-color: #fff;
-    border: 2px solid #e3162f;
-    border-radius: 5px;
+    background:url("../img/common/btn_movie_off.png")no-repeat;
+    background-size: 290px 176px;
 }
-#loading .rightPic .bhs_loginPanel .bhs_login_esc {
+#loading .rightPic .bhs_registerPanel{
+    z-index: 69;
+    height: 248px;
+    background-size: 290px 248px;
+}
+#loading .rightPic .bhs_loginPanel .bhs_login_esc,#loading .rightPic .bhs_registerPanel .bhs_register_esc {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -108,21 +112,42 @@ ul,ol,li{
     line-height: 16px;
     cursor: pointer;
     color: #262626;
-    background-color: #fff;
+    background-color: transparent;
 }
-#loading .rightPic .bhs_loginPanel .bhs_login_esc:hover {
+#loading .rightPic .bhs_loginPanel .bhs_login_esc:hover,#loading .rightPic .bhs_registerPanel .bhs_register_esc:hover {
     color: #e3162f;
 }
-#loading .rightPic .bhs_loginPanel .bhs_login_uname {
+#loading .rightPic .bhs_loginPanel .bhs_login_uname,#loading .rightPic .bhs_registerPanel .bhs_register_uname {
     position: absolute;
     top: 50px;
     left: 48px;
     width: 200px;
     height: 24px;
 }
-#loading .rightPic .bhs_loginPanel .bhs_login_upwd {
+#loading .rightPic .bhs_loginPanel .bhs_login_upwd,#loading .rightPic .bhs_registerPanel .bhs_register_upwd {
     position: absolute;
     top: 74px;
+    left: 48px;
+    width: 200px;
+    height: 24px;
+}
+#loading .rightPic .bhs_registerPanel .bhs_register_confirm {
+    position: absolute;
+    top: 98px;
+    left: 48px;
+    width: 200px;
+    height: 24px;
+}
+#loading .rightPic .bhs_registerPanel .bhs_register_email {
+    position: absolute;
+    top: 122px;
+    left: 48px;
+    width: 200px;
+    height: 24px;
+}
+#loading .rightPic .bhs_registerPanel .bhs_register_phone {
+    position: absolute;
+    top: 146px;
     left: 48px;
     width: 200px;
     height: 24px;
@@ -134,9 +159,23 @@ ul,ol,li{
     width: 100px;
     height: 24px;
 }
-#loading .rightPic .bhs_loginPanel .bhs_register_btn {
+#loading .rightPic .bhs_loginPanel .bhs_toRegister_btn {
     position: absolute;
     top: 98px;
+    left: 148px;
+    width: 100px;
+    height: 24px;
+}
+#loading .rightPic .bhs_registerPanel .bhs_register_btn {
+    position: absolute;
+    top: 170px;
+    left: 48px;
+    width: 100px;
+    height: 24px;
+}
+#loading .rightPic .bhs_registerPanel .bhs_toLogin_btn {
+    position: absolute;
+    top: 170px;
     left: 148px;
     width: 100px;
     height: 24px;
@@ -148,6 +187,34 @@ ul,ol,li{
 @keyframes loginPanel_1 {
     0% {opacity: 1;}
     100% {opacity: 0;}
+}
+@keyframes registerPanel {
+    0% {opacity: 0;z-index: 69;}
+    100% {opacity: 1;z-index: 71;}
+}
+@keyframes registerPanel_1 {
+    0% {opacity: 1;z-index: 71;}
+    100% {opacity: 0;z-index: 69;}
+}
+#loading .rightPic .bhs_registerPanel span {
+    position: absolute;
+    left: 300px;
+    width: 300px;
+}
+#loading .rightPic .bhs_registerPanel span.tips_uname {
+    top: 54px
+}
+#loading .rightPic .bhs_registerPanel span.tips_upwd {
+    top: 78px;
+}
+#loading .rightPic .bhs_registerPanel span.tips_confirm {
+    top: 102px;
+}
+#loading .rightPic .bhs_registerPanel span.tips_email {
+    top: 126px;
+}
+#loading .rightPic .bhs_registerPanel span.tips_phone {
+    top: 150px;
 }
 /*主体*/
 #bhs_contents {
