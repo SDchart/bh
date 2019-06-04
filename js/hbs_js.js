@@ -30,3 +30,21 @@ toLoginBtn.onclick=function () {
     registerPanel.setAttribute("style","animation: registerPanel_1 0.7s forwards");
     loginPanel.setAttribute("style","animation: loginPanel 0.7s 0.7s forwards");
 }
+$("#bhs_gallery_thumbs").on("click","img",function(){
+    $(".bx-viewport>img").attr("src",`${this.src}`);
+});
+$(".bx-wrapper").mouseover(function(){
+    console.log($(".bx-viewport>img"));
+    $(".bx-viewport>img").css("width",1200);
+    $(".bx-viewport>img").css("height",1200);
+});
+$(".bx-wrapper").mouseout(function(){
+    $(".bx-viewport>img").css("width",475);
+    $(".bx-viewport>img").css("height",475);
+    $(".bx-viewport>img").css("left",0);
+    $(".bx-viewport>img").css("top",0);
+});
+$("#bhs_gallery_main").mousemove(function(e){
+    $(".bx-viewport>img").css("left",-e.offsetX*725/475);
+    $(".bx-viewport>img").css("top",-e.offsetY*725/475);
+});
