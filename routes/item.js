@@ -26,7 +26,6 @@ router.get("/",(req,res)=>{
         pool.query(sql3,[hgid],(err,result)=>{
           if(err)throw err;
           output.tips=result;
-          console.log(output);
           res.send(output);
         })
       })

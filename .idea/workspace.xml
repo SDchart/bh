@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af41811-ca51-4d95-bd73-cf9b3d21ebb9" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/hbs_item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/gunpla_hg_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/gunpla_hg_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/hbs_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/hbs_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/item_3244.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/hbs_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/hbs_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/hbs_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/hbs_js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/hbs_item.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/hbs_item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/item.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="396" column="39" lean-forward="true" selection-start-line="393" selection-end-line="396" selection-end-column="39" />
+            <state relative-caret-position="2034">
+              <caret line="207" column="31" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -38,10 +36,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/hbs_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="562" column="27" lean-forward="true" selection-start-line="562" selection-start-column="27" selection-end-line="562" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/hbs_index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            <state relative-caret-position="464">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="41" />
               <folding>
                 <element signature="e#418#423#0" expanded="true" />
               </folding>
@@ -52,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3702">
-              <caret line="241" column="7" lean-forward="true" selection-start-line="241" selection-start-column="7" selection-end-line="241" selection-end-column="7" />
+            <state relative-caret-position="319">
+              <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -76,8 +83,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/hbs_item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="-149">
+              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1421">
+              <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -85,17 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="80">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/hbs_js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="667">
+              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -116,6 +132,7 @@
       <find>@keyframes</find>
       <find>vie</find>
       <find>hue</find>
+      <find>news u</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,18 +153,20 @@
         <option value="$PROJECT_DIR$/js/hbs_check.js" />
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/public/footer.html" />
         <option value="$PROJECT_DIR$/public/navbox.html" />
         <option value="$PROJECT_DIR$/public/js/hbs_instead.js" />
         <option value="$PROJECT_DIR$/pool.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/item_3244.html" />
         <option value="$PROJECT_DIR$/public/js/hbs_index.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/hbs_js.js" />
         <option value="$PROJECT_DIR$/routes/item.js" />
         <option value="$PROJECT_DIR$/public/js/hbs_item.js" />
+        <option value="$PROJECT_DIR$/public/footer.html" />
+        <option value="$PROJECT_DIR$/public/item.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/css/hbs_style.css" />
       </list>
     </option>
   </component>
@@ -259,7 +278,7 @@
       <workItem from="1559737555431" duration="12000" />
       <workItem from="1559790180473" duration="1031000" />
       <workItem from="1560171665384" duration="1614000" />
-      <workItem from="1560213940330" duration="23889000" />
+      <workItem from="1560213940330" duration="31195000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1556280822659</created>
@@ -387,17 +406,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560230687410</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update">
+      <created>1560245016291</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1560245016291</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update">
+      <created>1560250203601</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1560250203601</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142235000" />
+    <option name="totallyTimeSpent" value="149541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-8" width="1872" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105779715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.105779715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -410,7 +443,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3253638" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25883576" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32952183" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32952183" />
@@ -554,20 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/hbs_instead.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -592,39 +611,10 @@
     <entry file="file://$PROJECT_DIR$/node_modules/cors/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/hbs_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="381" column="1" selection-start-line="381" selection-start-column="1" selection-end-line="381" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="396" column="39" lean-forward="true" selection-start-line="393" selection-end-line="396" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/hbs_index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="e#418#423#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,24 +625,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/hbs_index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="e#418#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/hbs_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        <state relative-caret-position="80">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1421">
+          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/hbs_item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="-149">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3702">
-          <caret line="241" column="7" lean-forward="true" selection-start-line="241" selection-start-column="7" selection-end-line="241" selection-end-column="7" />
+        <state relative-caret-position="319">
+          <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -662,10 +683,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/hbs_js.js">
+    <entry file="file://$PROJECT_DIR$/public/css/hbs_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="377">
+          <caret line="562" column="27" lean-forward="true" selection-start-line="562" selection-start-column="27" selection-end-line="562" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="207" column="31" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
