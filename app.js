@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors=require("cors");
 /*引入路由模块*/
 const index=require("./routes/index");
+const hglist=require("./routes/hglist");
 const item=require("./routes/item");
 var app = express();
 app.listen(3000);
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static('public'));
 /*使用路由器来管理路由*/
 app.use("/index",index);
+app.use("/hglist",hglist);
 app.use("/item",item);
 
 
