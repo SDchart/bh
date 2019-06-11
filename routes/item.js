@@ -18,17 +18,18 @@ router.get("/",(req,res)=>{
     pool.query(sql1,[hgid],(err,result)=>{
       if(err)throw err;
       output.product=result[0];
-    })
-    var sql2=`select * from bhs_hg_ms_pic where hgmsid=?`;
-    pool.query(sql2,[hgid],(err,result)=>{
-      if(err)throw err;
-      output.pics=result;
-    })
-    var sql3=`select * from bhs_hg_ms_tip where hgmsid=?`
-    pool.query(sql3,[hgid],(err,result)=>{
-      if(err)throw err;
-      output.tips=result;
-      res.send(output);
+      var sql2=`select * from bhs_hg_ms_pic where hgmsid=?`;
+      pool.query(sql2,[hgid],(err,result)=>{
+        if(err)throw err;
+        output.pics=result;
+        var sql3=`select * from bhs_hg_ms_tip where hgmsid=?`
+        pool.query(sql3,[hgid],(err,result)=>{
+          if(err)throw err;
+          output.tips=result;
+          console.log(output);
+          res.send(output);
+        })
+      })
     })
   }else{
     res.send(output);

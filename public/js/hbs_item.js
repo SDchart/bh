@@ -1,7 +1,7 @@
 $(function(){
 //获得地址栏中?后的查询字符串部分，按等号一分为二，取后半部分。
     var hgid=location.search.split("=")[1];
-//只有地址栏中提供了lid时，才发送请求
+//只有地址栏中提供了hgid时，才发送请求
     if(hgid!==undefined){
         $.ajax({
             url:"http://localhost:3000/item",
@@ -10,9 +10,7 @@ $(function(){
             dataType:"json",
             success:function(result){
                 console.log(result);
-                //从result中提取出需要的三个成员分别使用
                 var {product,pics,tips}=result;
-                /*将product中title, subtitle, price, promise属性提取出来放到页面指定位置*/
                 console.log(pics,tips);
                 var {hgname,hguptime,hgprice}=product;
                 console.log(hgname,hguptime,hgprice);
@@ -20,7 +18,8 @@ $(function(){
                 //49行:a id="p-subtitle"
                 //54行:h2 id="p-price"
                 //58行:span id="p-promise"
-                $("#p-title").html(title);
+                $(".bclist>ul>li:last-child").html(hgname);
+                $(".bhs_main_title>span").html(hgname);
                 $("#p-subtitle").html(subtitle);
                 $("#p-price").html(`¥${price.toFixed(2)}`);
                 $("#p-promise").html(promise);
