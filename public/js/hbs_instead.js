@@ -4,7 +4,20 @@ $(function(){
         type:"get",
         success:function(html){
             $(html).replaceAll("#bhs_header");
-            // $(`<link rel="stylesheet" href="css/header.css"/>`).appendTo("head")
+        }
+    })
+    $.ajax({
+        url:"navbox.html",
+        type:"get",
+        success:function(html){
+            $(html).replaceAll("#bhs_sub_navBox");
+        }
+    })
+    $.ajax({
+        url:"footer.html",
+        type:"get",
+        success:function(html){
+            $(html).replaceAll("#bhs_footer");
         }
     })
 })
