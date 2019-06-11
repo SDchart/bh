@@ -11,7 +11,7 @@ var app = express();
 app.listen(3000);
 //统一伪装跨域，之后不用再res.writeHead
 app.use(cors({
-  origin:"http://127.0.0.1:5500"
+  origin:"http://localhost:63342"
 }))
 //使用body-parser中间件
 app.use(bodyParser.urlencoded({extended:false}));
