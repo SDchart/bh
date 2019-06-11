@@ -4,9 +4,7 @@ const bodyParser = require('body-parser');
 const cors=require("cors");
 /*引入路由模块*/
 const index=require("./routes/index");
-const details=require("./routes/details");
-
-
+const item=require("./routes/item");
 var app = express();
 app.listen(3000);
 //统一伪装跨域，之后不用再res.writeHead
@@ -19,6 +17,6 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static('public'));
 /*使用路由器来管理路由*/
 app.use("/index",index);
-app.use("/details",details);
+app.use("/item",item);
 
 

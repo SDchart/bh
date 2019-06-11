@@ -30,7 +30,6 @@ $(window).on("load",function(){
         $(".bx-viewport>img").attr("src",`${this.src}`);
     });
     $(".bx-wrapper").mouseover(function(){
-        console.log($(".bx-viewport>img"));
         $(".bx-viewport>img").css("width",1200);
         $(".bx-viewport>img").css("height",1200);
     });
