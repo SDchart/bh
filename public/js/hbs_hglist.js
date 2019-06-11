@@ -6,7 +6,7 @@ $(function(){//DOMContentLoad
         dataType:"json",//让ajax自动将json字符串转为对象，可直接使用
         //onreadystatechange
         success:function(result){
-            console.log(result);
+            $(".bhs_search_num").html(`全${result.length}件`);
             var html="";
             //获得商品对象:
             for(var i in result){
@@ -14,8 +14,8 @@ $(function(){//DOMContentLoad
                 var uptime=p.hguptime.slice(0,10);
                 //将商品对象的各个属性，填充到HTML片段中
                 html+=`<li>
-                        <a href="item.html" target="_blank">
-                            <img src="${p.hgimg}" style="margin-top: -170px">
+                        <a href="item.html?hgid=${p.hgid}" target="_blank">
+                            <img src="${p.img}" style="margin-top: -142px">
                             <p>
                                 <span class="bhs_pd_ttl">${p.hgname}</span>
                                 <span class="bhs_pd_price">価格：${p.hgprice} 円（税込）</span>
