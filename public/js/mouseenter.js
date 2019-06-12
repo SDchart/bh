@@ -2,6 +2,7 @@
 var a_idx = 0;
 
     $("body").click(function(e) {
+        e.preventDefault();
 function RndNum(n){
  var rnd="";
  for(var i=0;i<n;i++)
@@ -10,7 +11,7 @@ function RndNum(n){
 }
  let a_num=RndNum(6);
 var a_color ="#"+a_num;
-var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善", "吻我", "爱你");
+var a = new Array("Critical", "Perfect", "Good", "Awesome", "Nice","Boy Next Door");
 var $i = $("<span></n>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
 var x = e.pageX,
@@ -20,6 +21,7 @@ var x = e.pageX,
 "top": y - 30,
 "left": x,
 "position": "absolute",
+            "font-size":"20px",
 "font-weight": "bold",
 "color": a_color
         });
