@@ -7,6 +7,7 @@ $(function(){//DOMContentLoad
         //onreadystatechange
         success:function(result){
             var html="";
+            console.log(result);
             //获得商品对象:
             for(var i in result){
                 var p=result[i];

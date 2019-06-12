@@ -1,30 +1,50 @@
-$(function(){//DOMContentLoad
-//向服务端接口localhost:3000/index发送ajax请求，获得返回的数组对象
+$(function(){
+    var page=location.search.split("=")[1];
+    $.ajax({
+        url:"http://localhost:3000/hglist/all",
+        type:"get",
+        dataType:"json",
+        success:function(result){
+            $(".bhs_search_num").html(`全${result.length}件`);
+            var pno=Math.ceil(result.length/8);
+            var html="";
+            if(page>1){
+                html+=`<li class="prev"><a href="gunpla_hg_list.html?page=${page-1}">‹ 前へ</a></li>`;
+            }
+            for(var i=1;i<=pno;i++){
+                if(page==i){
+                    html+=`<li><span>${i}</span></li>`;
+                }else{
+                    html+=`<li><a href="gunpla_hg_list.html?page=${i}">${i}</a></li>`;
+                }
+            }
+            if(page<pno){
+                html+=`<li class="next"><a href="gunpla_hg_list.html?page=${parseInt(page)+1}">次へ ›</a></li>`;
+            }
+            $("ul.pnav").html(html);
+        }
+    })
     $.ajax({
         url:"http://localhost:3000/hglist",
         type:"get",
-        dataType:"json",//让ajax自动将json字符串转为对象，可直接使用
-        //onreadystatechange
+        data:{page},
+        dataType:"json",
         success:function(result){
-            $(".bhs_search_num").html(`全${result.length}件`);
             var html="";
-            //获得商品对象:
             for(var i in result){
                 var p=result[i];
                 var uptime=p.hguptime.slice(0,10);
-                //将商品对象的各个属性，填充到HTML片段中
                 html+=`<li>
-                        <a href="item.html?hgid=${p.hgid}" target="_blank">
-                            <img src="${p.img}" style="margin-top: -142px">
-                            <p>
-                                <span class="bhs_pd_ttl">${p.hgname}</span>
-                                <span class="bhs_pd_price">価格：${p.hgprice} 円（税込）</span>
-                                <span class="bhs_pd_deliver">発売日：${uptime}</span>
-                            </p>
-                        </a>
-                    </li>`;
+                           <a href="item.html?hgid=${p.hgid}" target="_blank">
+                                <img src="${p.img}" style="margin-top: -142px">
+                                <p>
+                                    <span class="bhs_pd_ttl">${p.hgname}</span>
+                                    <span class="bhs_pd_price">価格：${p.hgprice} 円（税込）</span>
+                                    <span class="bhs_pd_deliver">発売日：${uptime}</span>
+                                </p>
+                            </a>
+                        </li>`;
             }
-            //将填充好的HTML片段，放入页面中指定的父元素下
             $(".bhs_pdlist_sbs").html(html);
         }
     })
