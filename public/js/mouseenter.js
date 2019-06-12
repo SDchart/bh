@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /* 鼠标点击特效 */
 var a_idx = 0;
 
@@ -34,5 +33,3 @@ function() {
             $i.remove();
         });
     });
-
-</script>

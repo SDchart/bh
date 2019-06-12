@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af41811-ca51-4d95-bd73-cf9b3d21ebb9" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/hbs_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/hbs_js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/mouseenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/mouseenter.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -87,11 +85,7 @@
           </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/mouseenter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-                </state>
-              </provider>
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -192,6 +186,7 @@
         <option value="$PROJECT_DIR$/public/item.html" />
         <option value="$PROJECT_DIR$/public/js/hbs_js.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/js/mouseenter.js" />
       </list>
     </option>
   </component>
@@ -305,7 +300,7 @@
       <workItem from="1560171665384" duration="1614000" />
       <workItem from="1560213940330" duration="35843000" />
       <workItem from="1560306503059" duration="10434000" />
-      <workItem from="1560330228234" duration="3745000" />
+      <workItem from="1560330228234" duration="3776000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1556280822659</created>
@@ -482,11 +477,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560333733316</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update">
+      <created>1560338890348</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1560338890348</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168368000" />
+    <option name="totallyTimeSpent" value="168399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-8" width="1872" height="1096" extended-state="6" />
@@ -718,11 +720,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/mouseenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
