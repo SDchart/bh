@@ -1,8 +1,8 @@
 /* 鼠标点击特效 */
 var a_idx = 0;
-
+(function(){
     $("body").click(function(e) {
-        e.preventDefault();
+
 function RndNum(n){
  var rnd="";
  for(var i=0;i<n;i++)
@@ -11,7 +11,7 @@ function RndNum(n){
 }
  let a_num=RndNum(6);
 var a_color ="#"+a_num;
-var a = new Array("Critical", "Perfect", "Good", "Awesome", "Nice","Boy Next Door");
+var a = new Array("Buy!","Buy it!", "Await for what?", "Who care?","Nobody!","Just Buy!", "Now!");
 var $i = $("<span></n>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
 var x = e.pageX,
@@ -35,3 +35,4 @@ function() {
             $i.remove();
         });
     });
+})();
